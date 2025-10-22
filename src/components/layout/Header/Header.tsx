@@ -1,6 +1,6 @@
 import Logo from '@/components/common/Logo/Logo';
 import NavigationBar from '@/components/layout/Header/NavigationBar/NavigationBar';
-import GradientButton from '@/components/common/GradientButton/GradientButton';
+import Button from '@/components/common/Button/Button.tsx';
 import LanguageSwitcher from '@/components/common/LanguageSwitcher/LanguageSwitcher';
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
 			<NavigationBar />
 			<div className="flex items-center gap-[20px]">
 				<LanguageSwitcher />
-				<GradientButton />
+				<Button background={'gradient'}>Qoşulun</Button>
 			</div>
 		</header>
 	)
