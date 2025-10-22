@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer base {
+    p {
+        @apply text-[20px] font-[Rubik] text-white;
+    }
+}
+
 a {
     position: relative;
 }
