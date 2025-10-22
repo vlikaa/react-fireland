@@ -2,7 +2,7 @@
 
 @layer base {
     p {
-        @apply text-[20px] font-[Rubik] text-white;
+        @apply text-[16px] xl:text-[20px] font-[Rubik] text-white;
     }
 }
 
