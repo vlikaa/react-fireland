@@ -1,10 +1,12 @@
 import './App.css'
-import Header from "./components/layout/Header/Header.tsx";
+import Layout from '@/components/layout/Layout.tsx';
 
 function App() {
     return (
         <>
-            <Header />
+            <Layout>
+				<h1>Hello World</h1>
+			</Layout>
         </>
     )
 }
