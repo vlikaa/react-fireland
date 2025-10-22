@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+    --font-rubik: Rubik;
+    --font-poppins: Poppins;
+    --font-inter: Inter;
+}
+
 @layer base {
     p {
         @apply text-[16px] xl:text-[20px] font-[Rubik] text-white;
