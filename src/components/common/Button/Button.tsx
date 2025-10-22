@@ -1,0 +1,28 @@
+import type { ReactNode } from 'react';
+
+interface GradientButtonProps {
+	children: ReactNode
+	background?: 'gradient' | 'white'
+	size?: 'wide' | 'narrow'
+}
+
+function Button({ children, background = 'gradient', size = 'narrow'}: GradientButtonProps) {
+
+	const backgroundClasses = {
+		gradient: 'text-white bg-gradient-to-r from-[#FF6A00] to-[#FF0900] hover:from-[#FF6A00] hover:to-[#FFB400] active:from-[#FF0900] active:to-[#FF6A00]',
+		white: 'text-[#FF0900] bg-white hover:bg-[#FFB400] hover:text-white active:bg-[#FF6A00]'
+	}
+
+	const sizeClasses = {
+		wide: 'w-[335px] xl:w-[386px]',
+		narrow: 'w-[120px]',
+	}
+
+	return (
+		<button className={`h-[40px] w-[183px] rounded-[4px] text-[18px] xl:text-[20px] hover:cursor-pointer ${backgroundClasses[background]} ${sizeClasses[size]}`}>
+			{children}
+		</button>
+	)
+}
+
+export default Button
