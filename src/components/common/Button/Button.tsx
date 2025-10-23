@@ -14,12 +14,12 @@ function Button({ children, background = 'gradient', size = 'narrow'}: GradientB
 	}
 
 	const sizeClasses = {
-		wide: 'w-[335px] xl:w-[386px]',
-		narrow: 'w-[120px]',
+		wide: 'w-[335px] xl:w-[386px] h-[40px] xl:h-[50px]',
+		narrow: 'w-[120px] h-[40px]',
 	}
 
 	return (
-		<button className={`h-[40px] w-[183px] rounded-[4px] text-[18px] xl:text-[20px] hover:cursor-pointer ${backgroundClasses[background]} ${sizeClasses[size]}`}>
+		<button className={`font-rubik h-[40px] w-[183px] rounded-[4px] text-[18px] xl:text-[20px] hover:cursor-pointer ${backgroundClasses[background]} ${sizeClasses[size]}`}>
 			{children}
 		</button>
 	)
