@@ -1,6 +1,8 @@
+import type { ReactNode } from 'react';
+
 interface NavItemProps {
     href: string
-    children: React.ReactNode
+    children: ReactNode
 }
 
 function NavigationItem({href, children}: NavItemProps) {
