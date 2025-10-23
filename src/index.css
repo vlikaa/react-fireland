@@ -1,14 +1,31 @@
 @import "tailwindcss";
 
-@theme {
-    --font-rubik: Rubik;
-    --font-poppins: Poppins;
-    --font-inter: Inter;
+@font-face {
+    font-family: Rubik;
+    src: url("@fontsource/rubik/400.css");
 }
+
+@font-face {
+    font-family: Poppins;
+    src: url("@fontsource/poppins/400.css");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("@fontsource/inter/400.css");
+}
+
+@theme {
+    --font-rubik: Rubik, "sans-serif";
+    --font-poppins: Poppins, "sans-serif";
+    --font-inter: Inter, "sans-serif";
+}
+
+
 
 @layer base {
     p {
-        @apply text-[16px] xl:text-[20px] font-[Rubik] text-white;
+        @apply text-[16px] xl:text-[20px] font-rubik text-white;
     }
 }
 
