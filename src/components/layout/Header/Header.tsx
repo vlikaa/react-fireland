@@ -18,7 +18,7 @@ function Header() {
 	}
 
 	return (
-		<header className="px-[24px] xl:px-[34px] h-[80px] bg-[#170A00] text-white flex items-center justify-between relative">
+		<header className="sticky z-1 top-0 left-0 px-[24px] xl:px-[34px] h-[80px] bg-[#170A00] text-white flex items-center justify-between ">
 			<Logo />
 
 			<div className="hidden xl:block">
