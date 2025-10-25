@@ -1,5 +1,5 @@
-import clock from '@assets/clock.svg'
-import pointer from '@assets/pointer.svg'
+import clock from '@assets/icons/hero/clock.svg'
+import pointer from '@assets/icons/hero/pointer.svg'
 import Button from '@/components/common/Button/Button.tsx';
 
 function Hero() {

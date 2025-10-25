@@ -1,4 +1,4 @@
-import logo from '@assets/fireland.svg'
+import logo from '@assets/icons/header/fireland.svg'
 
 function Logo() {
     return (

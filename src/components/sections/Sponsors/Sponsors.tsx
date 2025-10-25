@@ -1,5 +1,5 @@
-import iria from '@assets/iria.svg'
-import oyu from '@assets/oyu.svg'
+import iria from '@assets/icons/sponsors/iria.svg'
+import oyu from '@assets/icons/sponsors/oyu.svg'
 
 
 function Sponsors() {
