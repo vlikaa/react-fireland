@@ -7,11 +7,15 @@
     --font-inter: Inter, "sans-serif";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     position: relative;
 }
 
-a::before {
+a.animated::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -30,7 +34,7 @@ a::before {
             );
 }
 
-a:hover::before {
+a.animated:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
