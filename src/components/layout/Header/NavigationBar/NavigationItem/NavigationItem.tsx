@@ -9,7 +9,7 @@ function NavigationItem({href, children}: NavItemProps) {
     return (
         <a
             href={href}
-            className="font-inter text-lg"
+            className="font-inter text-lg animated"
         >
             {children}
         </a>
