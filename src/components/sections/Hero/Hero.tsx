@@ -4,7 +4,7 @@ import Button from '@/components/common/Button/Button.tsx';
 
 function Hero() {
 	return (
-		<div className="flex flex-col items-center bg-gradient-to-r from-[#FF6A00] to-[#FF9200] px-[20px] xl:px-[40px]">
+		<div id="hero" className="flex flex-col items-center bg-[url('@assets/hero-background.svg')] xl:bg-[url('@assets/xl-hero-background.svg')] bg-cover bg-center px-[20px] xl:px-[40px]">
 			<h1 className="font-poppins font-bold text-center text-[38px] xl:text-[64px] mt-[101px] xl:mt-[169px]">İdeyalarını alova çevir &lt;!&gt;</h1>
 			<p className="text-[16] xl:text-[20] font-inter font-medium text-center mt-[28px] xl:mt-[30px] mb-[68px] xl:mb-[77px]">Odlar Yurdu Universitetinin 30 illiyinə həsr olunmuş ilk böyük Hackathon</p>
 			<Button background={'white'} size={'wide'}>Qoşulun</Button>
