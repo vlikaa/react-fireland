@@ -12,7 +12,7 @@ import hands from '@assets/icons/aboutUs/hands.svg'
 function AboutUs() {
 	return (
 		<div
-			className="flex flex-col items-center xl:items-start px-[20px] xl:px-[40px] pt-[50px] xl:pt-[100px] pb-[50px]">
+			id="about" className="flex flex-col items-center xl:items-start px-[20px] xl:px-[40px] pt-[50px] xl:pt-[100px] pb-[50px]">
 			<SectionTitle>FireLand haqqında</SectionTitle>
 
 			<p className="text-center mt-[20px] xl:mt-[30px] mb-[30px] xl:mb-[60px] text-[16px] xl:text-[20px] font-rubik text-white">
@@ -22,7 +22,7 @@ function AboutUs() {
 				illik yubileyinə həsr olunmuş ilk böyük Hackathon!
 			</p>
 
-			<div className="grid grid-cols-1 xl:grid-cols-[3fr_2fr] gap-[25px] xl:gap-[30px]">
+			<div className="grid grid-cols-1 xl:grid-cols-[3fr_2fr] gap-[20px] xl:gap-[25px]">
 				<div className="xl:col-span-2">
 					<GradientBorderBox>
 						<div className="flex flex-col items-center xl:items-start gap-[20px]">
