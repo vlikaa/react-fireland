@@ -3,9 +3,9 @@ import NavigationItem from "@/components/layout/Header/NavigationBar/NavigationI
 function NavigationBar() {
     return (
         <nav className="flex gap-[30px]">
-            <NavigationItem href="#">Biz</NavigationItem>
-            <NavigationItem href="#">Mükafatlar</NavigationItem>
-            <NavigationItem href="#">Məlumat</NavigationItem>
+            <NavigationItem href="#about">Biz</NavigationItem>
+            <NavigationItem href="#info">Məlumat</NavigationItem>
+			<NavigationItem href="#reward">Mükafatlar</NavigationItem>
         </nav>
     )
 }
