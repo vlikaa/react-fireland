@@ -4,7 +4,7 @@ import Tier from '@/components/sections/Prizes/RewardPedestal/Tier/Tier.tsx';
 
 function Prizes() {
 	return (
-		<div className="px-[20px] xl:px-[40px] mt-[50px] xl:mt-[100px]">
+		<div id="reward" className="px-[20px] xl:px-[40px] pt-[50px] xl:pt-[100px]">
 			<div className="flex flex-col items-center xl:items-start">
 				<SectionTitle>Mükafatlar</SectionTitle>
 				<p className="text-center xl:text-left font-rubik text-[16px] xl:text-[20px] mt-[20px] xl:mt-[30px] mb-[50px] xl:mb-[60px]">
