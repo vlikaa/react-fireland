@@ -17,21 +17,32 @@ function Header() {
 		setIsMenuOpen(false)
 	}
 
+	const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault()
+
+		window.scrollTo({
+			top: 0,
+		})
+	}
+
 	return (
-		<header className="sticky z-1 top-0 left-0 px-[24px] xl:px-[34px] h-[80px] bg-[#170A00] text-white flex items-center justify-between ">
-			<Logo />
+		<header
+			className="sticky z-1 top-0 left-0 px-[24px] xl:px-[34px] h-[80px] bg-[#170A00] text-white flex items-center justify-between ">
+			<a href="#hero" onClick={handleLogoClick}>
+				<Logo/>
+			</a>
 
 			<div className="hidden xl:block">
-				<NavigationBar />
+				<NavigationBar/>
 			</div>
 
 			<div className="hidden xl:flex xl:items-center xl:gap-[20px]">
-				<LanguageSwitcher />
-				<Button background={'gradient'}>Qoşulun</Button>
+				<LanguageSwitcher/>
+				<Button background={ 'gradient' }>Qoşulun</Button>
 			</div>
 
-			<BurgerButton isOpen={isMenuOpen} onClick={handleMenuToggle} />
-			<BurgerMenu isOpen={isMenuOpen} onClose={handleMenuClose} />
+			<BurgerButton isOpen={ isMenuOpen } onClick={ handleMenuToggle }/>
+			<BurgerMenu isOpen={ isMenuOpen } onClose={ handleMenuClose }/>
 		</header>
 	)
 }
